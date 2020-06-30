@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sedona Hotels</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <article class="all_content">
+        <header>
+            <nav class="navigation">
+                <ul>
+                    <li class="able_navigation"><a href="index.html">Информация</a></li>
+                    <li id="doesntwork"><a>Фото и видео</a></li>
+                    <li class="main-logo"><img src="img/logo.png" width="70" height="56" alt="Логотип"></li>
+                    <li class="able_navigation"><a href="map.html">Карта штата</a></li>
+                    <li class="navigation_current"><a>Гостиницы</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="content">
+            <section class="filter">
+                <div class="filter_lists">
+                    <ul>
+                        <p>Инфраструктура:</p>
+                        <li class="filter-option">
+                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox"
+                                name="pool" id="filter-pool" checked>
+                            <label for="filter-pool">Бассейн</label>
+                        </li>
+                        <li class="filter-option">
+                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox"
+                                name="parking" id="filter-parking" checked>
+                            <label for="filter-parking">Парковка</label>
+                        </li>
+                        <li class="filter-option">
+                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox"
+                                name="Wi-fi" id="filter-Wi-fi">
+                            <label for="filter-Wi-fi">Wi-fi</label>
+                        </li>
+                    </ul>
+
+                    <ul>
+                        <p>Тип жилья:</p>
+                        <li class="filter-option">
+                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox"
+                                name="hotel" id="filter-hotel" checked>
+                            <label for="filter-hotel">Гостиница</label>
+                        </li>
+                        <li class="filter-option">
+                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox"
+                                name="motel" id="filter-motel" checked>
+                            <label for="filter-motel">Мотель</label>
+                        </li>
+                        <li class="filter-option">
+                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox"
+                                name="apartments" id="filter-apartments">
+                            <label for="filter-apartments">Аппартаменты</label>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <p>Стоимость в сутки (₽):</p>
+                    здесь должен быть интерактивный тумблер
+                </div>
+            </section>
+
+            <section class="sort">
+                <div class="sort_options">
+                <h2>Найдено: 3</h2>
+                <p>Сортировка: </p>
+                <ul>
+                    <li><button>По цене</button></li>
+                    <li><button>По типу</button></li>
+                    <li><button>По рейтингу</button></li>
+                </ul>
+                </div>
+
+                <div class="buttons">
+                    <button class="up_button"></button>
+                    <button class="down_button"></button>
+                </div>
+            </section>
+
+            <section class="content-zone">
+                Здесь должен быть список доступных гостиниц
+            </section>
+
+        </main>
+
+        <footer class="main-footer">
+            <h2>#VisitSedona</h2>
+
+            <ul class="footer-social">
+                <li>
+                    <a class="social-button" href="#">
+                        <span class="visually-hidden">Твиттер</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60" height="30" viewBox="0 0 17 15">
+                            <path fill="#FFF"
+                                d="M10.95.144c1.685-.496 2.984.27 3.577 1.179.673-.231 1.331-.481 2.011-.708a2.345 2.345 0 0 1-.857 1.768c.685.17 1.304-.491 1.304-.491-.169 1-1.006 1.788-1.563 2.024-.231 6.75-3.175 11.217-10.077 11.082h-.446c-.41 0-4.164-.46-4.898-1.887 2.271.196 3.893-.422 4.693-1.177-.96-.3-2.679-.477-2.979-2.95.349.106.564.228 1.19.119C1.705 8.247.374 7.53.448 5.33c.285.328 1.067.536 1.34.472C1.085 5.561-.182 2.442.894.85c1.818 1.854 3.735 3.606 7.152 3.773C8.254 2.33 9.183.793 10.95.144z" />
+                            </svg>
+                    </a>
+                </li>
+                <li>
+                    <a class="social-button" href="#">
+                        <span class="visually-hidden">Фейсбук</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="30" viewBox="0 0 10.15 21.74">
+                            <path
+                                d="M3.34 1.12A4.77 4.77 0 0 1 6.53 0h3.61v3.81H7.81a1.07 1.07 0 0 0-1.09.83v2.55h3.42c-.08 1.23-.24 2.45-.41 3.67h-3v10.87H2.21V10.86H0V7.21h2.19V3.66a3.83 3.83 0 0 1 1.15-2.54z"
+                                fill="#fff" />
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a class="social-button" href="#">
+                        <span class="visually-hidden">Инстаграм</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="30" viewBox="0 0 20 20">
+                            <path
+                                d="M18 0H2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm-8 6a4 4 0 1 1-4 4 4 4 0 0 1 4-4zM2.5 18a.47.47 0 0 1-.5-.5V9h2.1a3.4 3.4 0 0 0-.1 1 6 6 0 1 0 12 0 3.4 3.4 0 0 0-.1-1H18v8.5a.47.47 0 0 1-.5.5zM18 4.5a.47.47 0 0 1-.5.5h-2a.47.47 0 0 1-.5-.5v-2a.47.47 0 0 1 .5-.5h2a.47.47 0 0 1 .5.5z"
+                                fill="#fff" />
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+
+            <p class="text footer-copyright">
+                WebSite by_______<a href="https://github.com/Zheka126">Zheka126</a>
+            </p>
+
+        </footer>
+    </article>
+</body>
+
+</html>

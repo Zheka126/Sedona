@@ -1,0 +1,375 @@
+body {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+
+    font-family: "PT Sans Narrow", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.all_content {
+    min-width: 768px;
+    max-width: 1200px;
+    margin: auto;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+}
+
+@font-face {
+    font-family: "OpenSans";
+    src: url("fonts/ptsans.woff2") format("woff2"),
+        url("fonts/ptsans.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.visually-hidden {
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.text {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.navigation ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 16px;
+}
+
+.navigation .able_navigation:hover,
+.navigation .able_navigation:focus,
+.navigation .able_navigation:active {
+  color: #9ac2db;
+}
+
+.navigation_current {
+    color: #766357;
+}
+
+#doesntwork {
+    color: #c1c1c1;
+}
+
+ul .main-logo {
+    position: relative;
+    z-index: 3;
+}
+
+ul .main-logo::before {
+    position: absolute;
+    content: "";
+    width: 120px;
+    height: 120px;
+    margin-top: -60px;
+    margin-left: -25px;
+    z-index: -1;
+    background-color: #81b3d2;
+    border-radius: 10px;
+    transform: rotate(45deg);
+}
+
+.intro {
+    height: 650px;
+    background-image: url("../img/intro_photo.jpg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+
+.intro .sedona_name {
+    color: white;
+    font-size: 90px;
+}
+
+.intro h1,
+h2 {
+    padding: 20px 0;
+}
+
+.welcome {
+    text-align: center;
+    color: #81b3d2;
+    font-size: 46px;
+    margin: 0;
+}
+
+.cursive_font_grey {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cursive_font_grey::before,
+.cursive_font_grey::after {
+    content: "";
+
+    width: 30px;
+    height: 2px;
+    margin: 10px 10px;
+
+    background: #766357;
+}
+
+.cursive_font_white {
+    color: #ffffff;
+}
+
+.cursive_font_grey {
+    color: #766357;
+}
+
+.downShape {
+    margin: 58px 0;
+}
+
+.main_features {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #eeeeee;
+}
+
+.feature-item {
+    height: 256px;
+    text-align: center;
+    margin: 31px 0;
+    padding: 0;
+    background-color: #eeeeee;
+}
+
+.feature-item p {
+    margin: 0;
+}
+
+.feature-item span {
+    display: block;
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+.blue_block span {
+    display: block;
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+.blue_block {
+    height: 256px;
+    text-align: center;
+    margin: 0;
+    background-color: #81b3d2;
+    color: #ffffff;
+    flex-grow: 1;
+    max-width: 800px;
+}
+
+.picture {
+    height: 258px;
+    margin: 0;
+    padding: 0;
+}
+
+.reasons {
+    margin-bottom: 60px;
+}
+
+.number12::before,
+.number12::after {
+    content: "";
+    width: 10px;
+    height: 2px;
+
+    background-color: #ffffff;
+}
+
+.interest {
+    margin: 0;
+    margin-top: 60px;
+    margin-bottom: 35px;
+}
+
+.search_name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 570px;
+    height: 90px;
+    margin: auto;
+    margin-top: 55px;
+    color: #ffffff;
+    background-color: #766357;
+}
+
+.container_for_form {
+    position: relative;
+}
+
+.search-form {
+    position: absolute;
+    width: 570px;
+    height: 395px;
+    margin-left: 315px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+.appointment-item1, .appointment-item2, .appointment-item3, .appointment-item4 {
+    display: block;
+    color: #000000;
+}
+
+.appointment-item1, .appointment-item2 {
+    margin: 20px auto;
+    padding-left: 55px;
+}
+
+.search-form input[type="text"] {
+  box-sizing: border-box;
+  width: 345px;
+  height: 40px;
+  padding: 10px 15px;
+  padding-right: 40px;
+
+  font: inherit;
+  color: #000000;
+  text-transform: uppercase;
+
+  background-color: #f2f2f2;
+  border: 1px solid #000000;
+}
+
+.appointment-item3 {
+    margin-left: 10px;
+}
+
+.appointment-item4 {
+    margin-right: 10px;
+}
+
+.man_container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.man_container input[type="text"] {
+    width: 120px;
+    padding: 0;
+    text-align: center;
+}
+
+.find-button {
+    width: 460px;
+    height: 60px;
+    font-size: 21px;
+    background-color: #81b3d2;
+    color: #ffffff;
+    margin: 0;
+    margin-left: 55px;
+    margin-top: 10px;
+    padding: 0;
+}
+
+.map_container {
+    width: 100%;
+    margin-top: 500px;
+}
+
+.filter {
+    display: flex;
+    justify-content: space-between;
+    max-height: 220px;
+    background-image: url("../img/filter_background.jpg");
+    font-size: 16px;
+    text-align: left;
+    color: #ffffff;
+}
+
+.filter_lists {
+    display: flex;
+}
+
+.filter ul {
+    list-style: none;
+}
+
+.sort {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    margin-left: 75px;
+    padding: 0;
+}
+
+.sort_options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sort_options ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.main-footer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 200px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.social-button {
+    width: 150px;
+    height: 150px;
+    font-size: 50px;
+    background-color: #81b3d2;
+}
+
+.footer-copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
