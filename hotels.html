@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sedona Hotels</title>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 </head>
@@ -65,7 +66,7 @@
                     </ul>
                 </div>
 
-                <div>
+                <div class="tumbler_container">
                     <p>Стоимость в сутки (₽):</p>
                     здесь должен быть интерактивный тумблер
                 </div>
@@ -73,23 +74,104 @@
 
             <section class="sort">
                 <div class="sort_options">
-                <h2>Найдено: 3</h2>
-                <p>Сортировка: </p>
-                <ul>
-                    <li><button>По цене</button></li>
-                    <li><button>По типу</button></li>
-                    <li><button>По рейтингу</button></li>
-                </ul>
+                    <h2>Найдено: 3</h2>
+                    <p class="sorting">Сортировка: </p>
+                    <ul>
+                        <li><button class="sort_button current_button">По цене</button></li>
+                        <li><button class="sort_button">По типу</button></li>
+                        <li><button class="sort_button">По рейтингу</button></li>
+                    </ul>
                 </div>
 
                 <div class="buttons">
-                    <button class="up_button"></button>
-                    <button class="down_button"></button>
+                    <button class="up_button"><img src="img/icon-up-dir.svg" alt=""></button>
+                    <button class="down_button"><img src="img/icon-down-dir.svg" alt=""></button>
                 </div>
             </section>
 
-            <section class="content-zone">
-                Здесь должен быть список доступных гостиниц
+            <section class="content_zone">
+                <div class="hotel">
+                    <img class="hotel_image" src="img/hotel1.jpg" alt="">
+                    <div class="hotel_info">
+                        <div class="hotel_info_name">
+                            <h2>Amara Resort & Spa</h2>
+                            <div>
+                                <img src="img/star.svg" alt="">
+                                <img src="img/star.svg" alt="">
+                                <img src="img/star.svg" alt="">
+                                <img src="img/star.svg" alt="">
+                                <img src="img/star.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="hotel_price">
+                            <p>
+                                <pre>Гостиница           От 4000 Р.</pre>
+                            </p>
+                        </div>
+                        <div class="hotel_buttons">
+                            <div>
+                                <button>Подробнее</button>
+                                <button>Забронировать</button>
+                            </div>
+                            <div>
+                                <p>Рейтинг: 9,4</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hotel">
+                    <img class="hotel_image" src="img/hotel2.jpg" alt="">
+                    <div class="hotel_info">
+                        <div class="hotel_info_name">
+                            <h2>Desert Quail Inn</h2>
+                            <div>
+                                <img src="img/star.svg" alt="">
+                                <img src="img/star.svg" alt="">
+                                <img src="img/star.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="hotel_price">
+                            <p>
+                                <pre>Мотель           От 3000 Р.</pre>
+                            </p>
+                        </div>
+                        <div class="hotel_buttons">
+                            <div>
+                                <button>Подробнее</button>
+                                <button>Забронировать</button>
+                            </div>
+                            <div>
+                                <p>Рейтинг: 8,9</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hotel">
+                    <img class="hotel_image" src="img/hotel3.jpg" alt="">
+                    <div class="hotel_info">
+                        <div class="hotel_info_name">
+                            <h2>Villas at Poco Diablo</h2>
+                            <div>
+                                <img src="img/star.svg" alt="">
+                                <img src="img/star.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="hotel_price">
+                            <p>
+                                <pre>Аппартаменты           От 2000 Р.</pre>
+                            </p>
+                        </div>
+                        <div class="hotel_buttons">
+                            <div>
+                                <button>Подробнее</button>
+                                <button>Забронировать</button>
+                            </div>
+                            <div>
+                                <p>Рейтинг: 8,5</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
 
         </main>
@@ -101,16 +183,17 @@
                 <li>
                     <a class="social-button" href="#">
                         <span class="visually-hidden">Твиттер</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60" height="30" viewBox="0 0 17 15">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50"
+                            height="20" viewBox="0 0 17 15">
                             <path fill="#FFF"
                                 d="M10.95.144c1.685-.496 2.984.27 3.577 1.179.673-.231 1.331-.481 2.011-.708a2.345 2.345 0 0 1-.857 1.768c.685.17 1.304-.491 1.304-.491-.169 1-1.006 1.788-1.563 2.024-.231 6.75-3.175 11.217-10.077 11.082h-.446c-.41 0-4.164-.46-4.898-1.887 2.271.196 3.893-.422 4.693-1.177-.96-.3-2.679-.477-2.979-2.95.349.106.564.228 1.19.119C1.705 8.247.374 7.53.448 5.33c.285.328 1.067.536 1.34.472C1.085 5.561-.182 2.442.894.85c1.818 1.854 3.735 3.606 7.152 3.773C8.254 2.33 9.183.793 10.95.144z" />
-                            </svg>
+                        </svg>
                     </a>
                 </li>
                 <li>
                     <a class="social-button" href="#">
                         <span class="visually-hidden">Фейсбук</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="30" viewBox="0 0 10.15 21.74">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="20" viewBox="0 0 10.15 21.74">
                             <path
                                 d="M3.34 1.12A4.77 4.77 0 0 1 6.53 0h3.61v3.81H7.81a1.07 1.07 0 0 0-1.09.83v2.55h3.42c-.08 1.23-.24 2.45-.41 3.67h-3v10.87H2.21V10.86H0V7.21h2.19V3.66a3.83 3.83 0 0 1 1.15-2.54z"
                                 fill="#fff" />
@@ -120,7 +203,7 @@
                 <li>
                     <a class="social-button" href="#">
                         <span class="visually-hidden">Инстаграм</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="30" viewBox="0 0 20 20">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="20" viewBox="0 0 20 20">
                             <path
                                 d="M18 0H2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm-8 6a4 4 0 1 1-4 4 4 4 0 0 1 4-4zM2.5 18a.47.47 0 0 1-.5-.5V9h2.1a3.4 3.4 0 0 0-.1 1 6 6 0 1 0 12 0 3.4 3.4 0 0 0-.1-1H18v8.5a.47.47 0 0 1-.5.5zM18 4.5a.47.47 0 0 1-.5.5h-2a.47.47 0 0 1-.5-.5v-2a.47.47 0 0 1 .5-.5h2a.47.47 0 0 1 .5.5z"
                                 fill="#fff" />
